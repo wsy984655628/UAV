@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.14.1
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Cortex-M4, aa, LIC=65IVE-5GDYK-PCYJ8-3ZZEI-3FT8E-YAIHL
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  D:\Program Files\Keil v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\wsy\Desktop\Myprogram\project\my_project.uvprojx
+Project File Date:  06/24/2015
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 1 (build 106)', folder: 'D:\Program Files\Keil v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f40xx.s...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_rcc.c...
+compiling led.c...
+..\program\drivers\led.h(16): warning:  #1-D: last line of file ends without a newline
+                                
+..\program\drivers\led.c: 1 warning, 0 errors
+compiling usart.c...
+compiling main.c...
+..\program\drivers\led.h(16): warning:  #1-D: last line of file ends without a newline
+                                
+..\program\main.c: 1 warning, 0 errors
+linking...
+.\Objects\my_project.axf: Error: L6218E: Undefined symbol USART_Cmd (referred from usart.o).
+.\Objects\my_project.axf: Error: L6218E: Undefined symbol USART_GetFlagStatus (referred from usart.o).
+.\Objects\my_project.axf: Error: L6218E: Undefined symbol USART_Init (referred from usart.o).
+.\Objects\my_project.axf: Error: L6218E: Undefined symbol USART_ReceiveData (referred from usart.o).
+.\Objects\my_project.axf: Error: L6218E: Undefined symbol USART_SendData (referred from usart.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 5 error messages.
+".\Objects\my_project.axf" - 5 Error(s), 2 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\wsy\Desktop\Myprogram\project\RTE
+  D:\Program Files\Keil v5\ARM\PACK\Keil\STM32F4xx_DFP\2.4.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+</pre>
+</body>
+</html>
