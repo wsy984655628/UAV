@@ -2,6 +2,7 @@
 #include "main.h"
 #include "led.h"
 #include "usart.h"
+#include "pwm.h"
 
 int main()
 {
@@ -10,5 +11,17 @@ int main()
 	
 	USART_DT_Config();
 	
-	printf("test\r\n");
+	PwmInit();
+	
+	USART_SendData(USART2, 'A');
+	printf(" test \r\n");
+//	{
+//		uint16_t i;
+//		for (i=0; i<USART_SendBuffer_Size; i++)
+//		{
+//			USART_SendBuffer[i]= 'A' ;
+//		}
+//	}
+//USART_DMACmd(USART2,USART_DMAReq_Tx,ENABLE);
+	
 }
