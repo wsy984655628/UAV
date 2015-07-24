@@ -20,7 +20,7 @@ void PwmInit(void)
 	GPIO_InitStructure.GPIO_Speed=GPIO_Speed_100MHz;
 	GPIO_Init(GPIOA,	&GPIO_InitStructure);
 	
-	//200Hz
+	//100Hz
 	TIM_TimeBaseStructure.TIM_ClockDivision	= 0;
 	TIM_TimeBaseStructure.TIM_CounterMode	=	TIM_CounterMode_Up;
 	TIM_TimeBaseStructure.TIM_Period = 10000;
